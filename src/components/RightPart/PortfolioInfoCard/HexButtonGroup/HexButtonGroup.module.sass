@@ -1,0 +1,60 @@
+.HexButtonGroup
+  width: 75%
+  //height: 37vh
+  //height: 20vw
+  //height: max-content
+  display: grid
+  grid-template-rows: 1fr 4fr
+  //min-height: 35vh
+  //background-color: gray
+
+  h1
+    padding: 0.5rem 0
+    font-family: Ropa Sans
+    font-size: 4rem
+    font-weight: 400
+    letter-spacing: 1.5rem
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    border-bottom: white 0.3rem solid
+    border-top: white 0.3rem solid
+    color: #8C2B2B
+
+  .container
+    position: relative
+    padding-top: 3%
+
+    .cell
+      position: absolute
+      background-color: #C4C4C4
+      //width: 31%
+      //height: 60%
+      width: calc(7rem + 5vw)
+      height: calc(8rem + 5vw)
+      -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+
+    .cell:nth-child(2)
+      transform: translate(105%, 0)
+
+    .cell:nth-child(3)
+      transform: translate(210%, 0)
+
+    .cell:nth-child(4)
+      transform: translate(52%, 79%)
+
+    .cell:nth-child(5)
+      transform: translate(157%, 79%)
+
+  //.cell:nth-child(2)
+  //  left: 33%
+  //.cell:nth-child(3)
+  //  left: 66%
+  //.cell:nth-child(4)
+  //  top: 53%
+  //  left: 16%
+  //.cell:nth-child(5)
+  //  top: 53%
+  //  left: 49%
