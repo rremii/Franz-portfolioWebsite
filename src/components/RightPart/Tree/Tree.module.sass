@@ -1,3 +1,5 @@
+@import "src/sass/variables"
+
 .hidden
   span
     background-color: transparent !important
@@ -8,9 +10,26 @@
   display: flex
   align-items: center
   padding-top: 12vh
-  padding-right: 5vw
+  padding-right: 3vw
   padding-left: 2vw
   flex-direction: column
+
+  @include media-break($break1200px, max)
+    background-image: url("./../../../images/NASA2TABLET.png")
+
+    padding-left: 25vw
+    padding-right: 25vw
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    padding-bottom: 10vw
+  @include media-break($break500px, max)
+    background-image: url("./../../../images/NASABG2.png")
+    padding-left: 15vw
+    padding-right: 15vw
+  @include media-break(400px, max)
+    padding-left: 10vw
+    padding-right: 10vw
 
   .topContainer
     position: relative
@@ -28,6 +47,8 @@
     align-items: center
     height: min-content
     padding: 0.5rem 0
+    @include media-break($break1200px, max)
+      font-size: calc(1.5rem + 1.5vw)
   ////////////////////////////////
   .VertLine
     width: 100%
@@ -82,13 +103,17 @@
     grid-template-columns: 30% 0.3rem 1fr
 
     h2
+      padding-right: 2rem
       font-family: Ropa Sans
       font-weight: 400
       letter-spacing: 1rem
       display: flex
       align-items: center
-      font-size: 2rem
+      font-size: 1.8rem
       height: 3rem
+      justify-content: flex-end
+      @include media-break($break1200px, max)
+        font-size: calc(1.5rem + 1vw)
 
     section
       display: flex
@@ -124,14 +149,17 @@
         letter-spacing: 1.3rem
         text-align: center
         border-top: white 0.1rem solid
-
+        @include media-break($break1200px, max)
+          font-size: calc(1.5rem + 1vw)
       p
         color: #4F4F4F
         font-family: Ropa Sans
         font-size: 1rem
         font-weight: 400
         line-height: 1rem
-
+        @include media-break($break1200px, max)
+          font-size: calc(0.7rem + 1vw)
+          line-height: calc(0.7rem + 1vw)
 
 
 

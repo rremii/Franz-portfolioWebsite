@@ -6,7 +6,7 @@ const Tree = (props) => {
     document.addEventListener('scroll', () => setScroll(true))
     const [isScrolled, setScroll] = useState(false)
 
-    return <div onClick={() => setScroll(!isScrolled)} className={css.Tree}>
+    return <div className={css.Tree}>
         <div className={css.topContainer}>
             <h1 className={css.name}>EXPERIENCE</h1>
             {/*//////////////////////*/}

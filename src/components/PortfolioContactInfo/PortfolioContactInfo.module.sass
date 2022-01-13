@@ -1,15 +1,26 @@
+@import "./../../sass/variables"
+
 .PortfolioContactInfo
   margin-top: 20vh
-  //background-color: gray
   font-family: "Ropa Sans"
   width: 75%
+  grid-row: 3/4
+  grid-column: 1/2
+  @include media-break(1200px, max)
+    display: flex
+    justify-content: center
+    flex-direction: column
+    margin-top: 0
+    grid-column: 1/2
+    grid-row: initial
+    min-height: 100%
+    background: #191D21
 
   .container
     margin-bottom: 5vh
     display: flex
     align-items: flex-start
     gap: 2rem
-
     img
       width: 3rem
 
@@ -17,15 +28,15 @@
       flex-grow: 1
 
       h1
-        //display: flex
-        //align-items: center
+
         position: relative
         font-weight: 400
         font-size: 3rem
         color: #8C2B2B
         height: 4rem
         letter-spacing: 1.5rem
-
+        @include media-break(1200px, max)
+          font-size: calc(2.5rem + 1vw)
       h1::after
         content: ''
         position: absolute
@@ -39,3 +50,5 @@
         margin-top: 2rem
         font-size: 2rem
         font-weight: 400
+        @include media-break(1200px, max)
+          font-size: calc(1.5rem + 1vw)

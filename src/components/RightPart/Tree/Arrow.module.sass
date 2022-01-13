@@ -1,3 +1,4 @@
+@import "src/sass/variables"
 .hidden
   opacity: 0
 .Arrow
@@ -7,7 +8,8 @@
   right: 50%
   height: 10vh
   width: 250%
-
+  @include media-break($break1200px,max)
+    display: none
   p
     color: #F0FCF6
     font-family: Rationale

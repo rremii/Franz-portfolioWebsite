@@ -1,18 +1,22 @@
 import logo from './logo.svg';
 import './App.sass';
 import nasa from './images/nasa.png'
-import LeftPart from "./components/LeftPart/LeftPart";
 import React from "react";
 import RightPart from "./components/RightPart/RightPart";
 import KFooter from "./components/KFooter/KFooter";
 import Logo from './images/Logo.svg'
 import CV from './images/CV.svg'
+import PortfolioContactInfo from "./components/PortfolioContactInfo/PortfolioContactInfo";
+import AboutCard from "./components/AboutCard/AboutCard";
+import TopSection from "./components/TopSection/TopSection";
 
 function App() {
     return (
         <div className="App">
-            <LeftPart/>
+            <TopSection/>
+            <AboutCard/>
             <RightPart/>
+            <PortfolioContactInfo/>
             <KFooter/>
             <img className='logo' src={Logo} alt=""/>
             <img className='CV' src={CV} alt=""/>

@@ -7,10 +7,11 @@ import TextGroup from "./TextGroup/TextGroup";
 const PortfolioInfoCard = (props) => {
     return <div className={css.PortfolioInfoCard}>
         <HexButtonGroup/>
-        <div className={css.container}>
-            <IconGroup/>
-            <TextGroup/>
-        </div>
+        {/*<div className={css.break1}></div>*/}
+        <IconGroup/>
+        {/*<div className={css.break2}></div>*/}
+
+        <TextGroup/>
     </div>
 }
 export default PortfolioInfoCard

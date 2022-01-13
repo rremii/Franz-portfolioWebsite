@@ -1,8 +1,8 @@
 import css from './PortfolioContactInfo.module.sass'
-import location from './../../../images/location.svg'
-import call from './../../../images/call.svg'
-import email from './../../../images/email.svg'
-import laptop from './../../../images/laptop.svg'
+import location from '../../images/location.svg'
+import call from '../../images/call.svg'
+import email from '../../images/email.svg'
+import laptop from '../../images/laptop.svg'
 
 const PortfolioContactInfo = () => {
     return <div className={css.PortfolioContactInfo}>
